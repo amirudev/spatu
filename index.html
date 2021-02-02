@@ -29,8 +29,8 @@
                           <a class="nav-link active" aria-current="page" href="#"><i class="fas fa-home mx-3"></i>Dashboard</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fas fa-play mx-3"></i>Components</a>
-                            <ul class="nav flex-column ms-5 submenu">
+                            <a class="nav-link dropdown nav-dropdown"href="#"><i class="fas fa-play mx-3"></i>Components</a>
+                            <ul class="nav flex-column ms-5 submenu submenu-hidden" id="submenu-dropdown">
                                 <a href="#"><li class="nav-item p-2 ps-4">Alert</li></a>
                                 <a href="#"><li class="nav-item p-2 ps-4">Badge</li></a>
                                 <a href="#"><li class="nav-item p-2 ps-4">Breadcrumb</li></a>
@@ -51,8 +51,8 @@
                     <p class="nav-title text-secondary mx-3 my-1">Forms and Tables</p>
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#"><i class="far fa-file-alt mx-3"></i>Form Elements</a>
-                            <ul class="nav flex-column ms-5 submenu">
+                            <a class="nav-link dropdown nav-dropdown" href="#"><i class="far fa-file-alt mx-3"></i>Form Elements</a>
+                            <ul class="nav flex-column ms-5 submenu submenu-hidden" id="submenu-dropdown">
                                 <a href="#"><li class="nav-item p-2 ps-4">Input</li></a>
                                 <a href="#"><li class="nav-item p-2 ps-4">Input group</li></a>
                                 <a href="#"><li class="nav-item p-2 ps-4">Select</li></a>
@@ -76,7 +76,12 @@
                     <p class="nav-title text-secondary mx-3 my-1">Extra UI</p>
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="#"><i class="far fa-clone mx-3"></i>Widgets</a>
+                            <a class="nav-link dropdown nav-dropdown" aria-current="page" href="#"><i class="far fa-clone mx-3"></i>Widgets</a>
+                            <ul class="nav flex-column ms-5 submenu submenu-hidden">
+                                <a href="#"><li class="nav-item p-2 ps-4">Chatbox</li></a>
+                                <a href="#"><li class="nav-item p-2 ps-4">Pricing</li></a>
+                                <a href="#"><li class="nav-item p-2 ps-4">To-Do List</li></a>
+                            </ul>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link" href="#"><i class="fas fa-chart-line mx-3"></i>Charts</a>
@@ -87,10 +92,20 @@
                     <p class="nav-title text-secondary mx-3 my-1">Pages</p>
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="#"><i class="far fa-clone mx-3"></i>Authentication</a>
+                            <a class="nav-link dropdown nav-dropdown" aria-current="page" href="#"><i class="far fa-clone mx-3"></i>Authentication</a>
+                            <ul class="nav flex-column ms-5 submenu submenu-hidden">
+                                <a href="#"><li class="nav-item p-2 ps-4">Login</li></a>
+                                <a href="#"><li class="nav-item p-2 ps-4">Register</li></a>
+                                <a href="#"><li class="nav-item p-2 ps-4">Forgot Password</li></a>
+                            </ul>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#"><i class="fas fa-chart-line mx-3"></i>Error</a>
+                            <a class="nav-link dropdown nav-dropdown" href="#"><i class="fas fa-chart-line mx-3"></i>Error</a>
+                            <ul class="nav flex-column ms-5 submenu submenu-hidden">
+                                <a href="#"><li class="nav-item p-2 ps-4">403</li></a>
+                                <a href="#"><li class="nav-item p-2 ps-4">404</li></a>
+                                <a href="#"><li class="nav-item p-2 ps-4">500</li></a>
+                            </ul>
                         </li>
                     </ul>
                 </div>
@@ -99,5 +114,6 @@
         <div class="main bg-light float-right">
             B
         </div>
+        <script src="./assets/js/script.js"></script>
     </body>
 </html>

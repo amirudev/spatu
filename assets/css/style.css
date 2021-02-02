@@ -17,12 +17,18 @@ a {
     overflow-y: auto;
 }
 
-.sidebar-menu .nav-item img {
-    width: 20px;
+.sidebar-menu .nav-link {
+    font-size: 15px;
+}
+
+.sidebar-menu .dropdown::after {
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9" style="fill:none;stroke:gray;stroke-width:1"></polyline></svg>');
+    position: absolute;
+    right: 15px;
 }
 
 .sidebar-menu .submenu .nav-item {
-    font-size: 13px;
+    font-size: 14px;
 }
 
 .sidebar-menu .submenu .nav-item {
@@ -33,6 +39,10 @@ a {
 .sidebar-menu .submenu .nav-item:hover {
     color: grey;
     margin-left: 5px;
+}
+
+.sidebar-menu .submenu-hidden {
+    display: none;
 }
 
 /* Main */
