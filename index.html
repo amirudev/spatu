@@ -15,6 +15,7 @@
         <script src="https://kit.fontawesome.com/3bea811d2b.js" crossorigin="anonymous"></script>
     </head>
     <body>
+        <!-- Sidebar (start) -->
         <div class="sidebar-wrapper float-left bg-white position-fixed">
             <div class="sidebar-header">
                 <div class="sidebar-header_title text-center my-3 fs-3 text-secondary">
@@ -111,8 +112,102 @@
                 </div>
             </div>
         </div>
+        <!-- Sidebar (end) -->
         <div class="main bg-light float-right">
-            B
+            <!-- Topbar (start) -->
+            <nav class="navbar navbar-expand-md navbar-light bg-light">
+                <div class="container-fluid">
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav d-flex justify-content-between container-fluid">
+                            <li class="nav-item my-1">
+                                <a class="nav-link" href="#"><i class="fas fa-bars"></i></a>
+                            </li>
+                            <li class="nav-item nav-item-right d-flex">
+                                <a class="nav-link mx-2 my-1" href="#"><i class="far fa-bell"></i></a>
+                                <a class="nav-link mx-2 my-1" href="#"><i class="far fa-envelope"></i></a>
+                                <a class="nav-link" href="#">
+                                    <img src="./assets/image/128x128.png" id="avatar-image" class="mx-2"><span id="avatar-text" class="text-secondary">Hi, Wahyu A</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Topbar (end) -->
+            <!-- Content (start) -->
+            <div class="main-content container-fluid">
+                <div class="page-title mx-2 my-3">
+                    <h3>Dashboard</h3>
+                    <p class="text-muted">Dashboard statistic to boost your website</p>
+                </div>
+                <section class="main-data">
+                    <div class="row g-3 graph-top">
+                        <div class="col-lg-3 p-2">
+                            <div class="card card-canvas mx-1 p-2 shadow-sm">
+                                <span class="fs-5 text-white">Revenue</span>
+                                <canvas id="canvas-balance">
+                                    
+                                </canvas>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 p-2">
+                            <div class="card card-canvas mx-1 p-2 shadow-sm">
+                                <span class="fs-5 text-white">Net Income</span>
+                                <canvas id="canvas-balance">
+                                    
+                                </canvas>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 p-2">
+                            <div class="card card-canvas mx-1 p-2 shadow-sm">
+                                <span class="fs-5 text-white">Finance</span>
+                                <canvas id="canvas-balance">
+                                    
+                                </canvas>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 p-2">
+                            <div class="card card-canvas mx-1 p-2 shadow-sm">
+                                <span class="fs-5 text-white">Market Cap</span>
+                                <canvas id="canvas-balance">
+                                    
+                                </canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row graph">
+                        <div class="col-8">
+                            <div class="col-12">
+                                <div class="card card-canvas p-3 bg-white my-3">
+                                    <span class="fs-5">Balance</span>
+                                    <canvas id=""></canvas>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="card card-canvas p-3 bg-white my-3">
+                                    <span class="fs-5">Admin Contact</span>
+                                    <canvas id=""></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="col-12">
+                                <div class="card card-canvas p-3 bg-white my-3">
+                                    <span class="fs-5">Customers</span>
+                                    <canvas id=""></canvas>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="card card-canvas p-3 bg-white my-3">
+                                    <span class="fs-5">Target</span>
+                                    <canvas id=""></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- Content (end) -->
         </div>
         <script src="./assets/js/script.js"></script>
     </body>
