@@ -17,6 +17,13 @@ a {
     overflow-y: auto;
 }
 
+.sidebar-header .close-sidebar-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3px;
+}
+
 .sidebar-menu .nav-link {
     font-size: 15px;
 }
@@ -101,8 +108,4 @@ a {
 
 .main .main-data .activity-bar .act-3 {
     background-color: #2781B4;
-}
-
-.main .main-data .legend-bar .col-item {
-    /* paddi */
 }

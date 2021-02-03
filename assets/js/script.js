@@ -375,3 +375,38 @@ var chart_transaction = new Chart(ctx_transaction, {
         }
     }
 });
+
+const ctx_portfolios = document.getElementById('canvas-portfolios');
+var chart_portfolios = new Chart(ctx_portfolios, {
+    type: 'doughnut',
+    data: {
+        labels: ['DJI - Dow Jones Industrial Average', 'INX - S&P 500', 'IXIC - Nasdaq Composite', 'RUT - Russel 2000 Index'],
+        datasets: [
+            {
+                backgroundColor: [
+                    'rgba(2, 117, 216, 0.7)',
+                    'rgba(92, 184, 92, 0.7)',
+                    'rgba(91, 192, 222, 0.7)',
+                    'rgba(240, 173, 78, 0.7)',
+                ],
+                data: [30, 50, 20, 40],
+            }
+        ],
+    },
+    options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        legend: {
+            display: false
+        },
+        title: {
+            display: false
+        },
+        layout: {
+            padding: {
+                top: 20,
+                bottom: 20
+            },
+        }
+    }
+});

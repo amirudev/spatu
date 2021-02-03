@@ -22,7 +22,7 @@
                     <span>Spatu!</span>
                 </div>
             </div>
-            <div class="sidebar-menu my-5">
+            <div class="sidebar-menu my-4">
                 <div class="nav-list my-3">
                     <p class="nav-title text-secondary mx-3 my-1">Main Menu</p>
                     <ul class="nav flex-column">
@@ -176,7 +176,7 @@
                         </div>
                     </div>
                     <div class="row graph">
-                        <div class="col-8">
+                        <div class="col-lg-8 col-12">
                             <div class="col-12">
                                 <div class="card card-canvas p-4 bg-white my-4">
                                     <span class="fs-5">Transactions</span>
@@ -196,12 +196,47 @@
                             </div>
                             <div class="col-12">
                                 <div class="card card-canvas p-3 bg-white my-4">
-                                    <span class="fs-5">Admin Contact</span>
-                                    <canvas id=""></canvas>
+                                    <span class="fs-5">Stock Composite</span>
+                                    <table class="table my-4">
+                                        <thead>
+                                            <tr>
+                                                <th>Code</th>
+                                                <th>Name</th>
+                                                <th>Open</th>
+                                                <th>Change</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>DJI</th>
+                                                <td>Dow Jones Industrial Average</td>
+                                                <td>30,687.48</td>
+                                                <td><span class="badge bg-success">5.8%<i class="fas fa-arrow-circle-up ms-2"></i></span></td>
+                                            </tr>
+                                            <tr>
+                                                <th>INX</th>
+                                                <td>S&P 500</td>
+                                                <td>3,826.31</td>
+                                                <td><span class="badge bg-danger">4.78%<i class="fas fa-arrow-circle-down ms-2"></i></span></td>
+                                            </tr>
+                                            <tr>
+                                                <th>IXIC</th>
+                                                <td>Nasdaq Composite</td>
+                                                <td>13,612.78</td>
+                                                <td><span class="badge bg-success">6.34%<i class="fas fa-arrow-circle-up ms-2"></i></span></td>
+                                            </tr>
+                                            <tr>
+                                                <th>RUT</th>
+                                                <td>Russel 2000 Index</td>
+                                                <td>2,151.44</td>
+                                                <td><span class="badge bg-success">2.0%<i class="fas fa-arrow-circle-up ms-2"></i></span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-lg-4 col-12">
                             <div class="col-12">
                                 <div class="card card-canvas p-3 bg-white my-4">
                                     <span class="fs-5">Admin Check-in</span>
@@ -270,8 +305,8 @@
                             </div>
                             <div class="col-12">
                                 <div class="card card-canvas p-3 bg-white my-4">
-                                    <span class="fs-5">Target</span>
-                                    <canvas id=""></canvas>
+                                    <span class="fs-5">Portfolios</span>
+                                    <canvas id="canvas-portfolios"></canvas>
                                 </div>
                             </div>
                         </div>
