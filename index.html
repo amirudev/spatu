@@ -145,7 +145,7 @@
                         <div class="col-lg-3 p-2">
                             <div class="card card-canvas mx-1 p-2 shadow-sm">
                                 <span class="fs-5 text-white">Revenue</span>
-                                <canvas id="canvas-balance">
+                                <canvas id="canvas-revenue">
                                     
                                 </canvas>
                             </div>
@@ -153,7 +153,7 @@
                         <div class="col-lg-3 p-2">
                             <div class="card card-canvas mx-1 p-2 shadow-sm">
                                 <span class="fs-5 text-white">Net Income</span>
-                                <canvas id="canvas-balance">
+                                <canvas id="canvas-netincome">
                                     
                                 </canvas>
                             </div>
@@ -161,15 +161,15 @@
                         <div class="col-lg-3 p-2">
                             <div class="card card-canvas mx-1 p-2 shadow-sm">
                                 <span class="fs-5 text-white">Finance</span>
-                                <canvas id="canvas-balance">
+                                <canvas id="canvas-finance">
                                     
                                 </canvas>
                             </div>
                         </div>
                         <div class="col-lg-3 p-2">
                             <div class="card card-canvas mx-1 p-2 shadow-sm">
-                                <span class="fs-5 text-white">Market Cap</span>
-                                <canvas id="canvas-balance">
+                                <span class="fs-5 text-white">Visitor</span>
+                                <canvas id="canvas-visitor">
                                     
                                 </canvas>
                             </div>
@@ -178,13 +178,24 @@
                     <div class="row graph">
                         <div class="col-8">
                             <div class="col-12">
-                                <div class="card card-canvas p-3 bg-white my-3">
-                                    <span class="fs-5">Balance</span>
-                                    <canvas id=""></canvas>
+                                <div class="card card-canvas p-4 bg-white my-4">
+                                    <span class="fs-5">Transactions</span>
+                                    <div class="row">
+                                        <div class="col-4 my-5">
+                                            <span class="fs-3 fw-bold">Rp150.000</span>
+                                            <p class="text-muted">This month</p>
+                                            <div class="d-flex">
+                                                <div class="rounded-full w-2 h-2 bg-primary"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-8">
+                                            <canvas id="canvas-transaction"></canvas>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-12">
-                                <div class="card card-canvas p-3 bg-white my-3">
+                                <div class="card card-canvas p-3 bg-white my-4">
                                     <span class="fs-5">Admin Contact</span>
                                     <canvas id=""></canvas>
                                 </div>
@@ -192,13 +203,73 @@
                         </div>
                         <div class="col-4">
                             <div class="col-12">
-                                <div class="card card-canvas p-3 bg-white my-3">
-                                    <span class="fs-5">Customers</span>
-                                    <canvas id=""></canvas>
+                                <div class="card card-canvas p-3 bg-white my-4">
+                                    <span class="fs-5">Admin Check-in</span>
+                                    <div class="activity-bar row my-4">
+                                        <div class="mo col">
+                                            <div class="day-name">Mo</div>
+                                            <div class="week-1 col-item act-0"></div>
+                                            <div class="week-2 col-item act-1"></div>
+                                            <div class="week-3 col-item act-2"></div>
+                                            <div class="week-4 col-item act-3"></div>
+                                        </div>
+                                        <div class="tu col">
+                                            <div class="day-name">Tu</div>
+                                            <div class="week-1 col-item act-1"></div>
+                                            <div class="week-2 col-item act-2"></div>
+                                            <div class="week-3 col-item act-3"></div>
+                                            <div class="week-4 col-item act-0"></div>
+                                        </div>
+                                        <div class="we col">
+                                            <div class="day-name">We</div>
+                                            <div class="week-1 col-item act-3"></div>
+                                            <div class="week-2 col-item act-2"></div>
+                                            <div class="week-3 col-item act-0"></div>
+                                            <div class="week-4 col-item act-1"></div>
+                                        </div>
+                                        <div class="th col">
+                                            <div class="day-name">Th</div>
+                                            <div class="week-1 col-item act-1"></div>
+                                            <div class="week-2 col-item act-1"></div>
+                                            <div class="week-3 col-item act-0"></div>
+                                            <div class="week-4 col-item act-3"></div>
+                                        </div>
+                                        <div class="fr col">
+                                            <div class="day-name">Fr</div>
+                                            <div class="week-1 col-item act-0"></div>
+                                            <div class="week-2 col-item act-1"></div>
+                                            <div class="week-3 col-item act-3"></div>
+                                            <div class="week-4 col-item act-3"></div>
+                                        </div>
+                                        <div class="sa col">
+                                            <div class="day-name">Sa</div>
+                                            <div class="week-1 col-item act-1"></div>
+                                            <div class="week-2 col-item act-2"></div>
+                                            <div class="week-3 col-item act-1"></div>
+                                            <div class="week-4 col-item act-1"></div>
+                                        </div>
+                                        <div class="su col">
+                                            <div class="day-name">Su</div>
+                                            <div class="week-1 col-item act-1"></div>
+                                            <div class="week-2 col-item act-0"></div>
+                                            <div class="week-3 col-item act-0"></div>
+                                            <div class="week-4 col-item act-0"></div>
+                                        </div>
+                                    </div>
+                                    <div class="legend-bar">
+                                        <div class="activity-bar row">
+                                            <span class="col-4 text-center py-2">Seldom</span>
+                                            <div class="week-1 col-1 col-item act-0 mx-1"></div>
+                                            <div class="week-2 col-1 col-item act-1 mx-1"></div>
+                                            <div class="week-3 col-1 col-item act-2 mx-1"></div>
+                                            <div class="week-4 col-1 col-item act-3 mx-1"></div>
+                                            <span class="col-3 text-center py-2">Often</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-12">
-                                <div class="card card-canvas p-3 bg-white my-3">
+                                <div class="card card-canvas p-3 bg-white my-4">
                                     <span class="fs-5">Target</span>
                                     <canvas id=""></canvas>
                                 </div>
@@ -209,6 +280,7 @@
             </div>
             <!-- Content (end) -->
         </div>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
         <script src="./assets/js/script.js"></script>
     </body>
 </html>

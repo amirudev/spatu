@@ -73,3 +73,36 @@ a {
     width: 100%;
     height: 300px;
 }
+
+.main .main-data .graph .card-canvas canvas {
+    height: 250px;
+}
+
+.main .main-data .activity-bar .col-item {
+    width: 10px;
+    height: 10px;
+    background-color: #DFEAF0;
+    padding: 10px;
+    margin-top: 11px;
+    border-radius: 15%;
+}
+
+.main .main-data .activity-bar .act-0 {
+    background-color: #DFEAF0;
+}
+
+.main .main-data .activity-bar .act-1 {
+    background-color: #B5E4FE;
+}
+
+.main .main-data .activity-bar .act-2 {
+    background-color: #2CB3FF;
+}
+
+.main .main-data .activity-bar .act-3 {
+    background-color: #2781B4;
+}
+
+.main .main-data .legend-bar .col-item {
+    /* paddi */
+}

@@ -5,3 +5,373 @@ Array.prototype.forEach.call(els_nav, (el) => {
         el.nextSibling.nextSibling.classList.toggle('submenu-hidden');
     })
 });
+
+var ctx_revenue = document.getElementById('canvas-revenue');
+var chart_revenue = new Chart(ctx_revenue, {
+    // The type of chart we want to create
+    type: 'line',
+
+    // The data for our dataset
+    data: {
+        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+        datasets: [
+            {
+                label: 'Revenue',
+                backgroundColor: '#fff',
+                borderColor: '#fff',
+                data: [10, 30, 70, 40, 30, 50, 100],
+                fill: false,
+                pointBorderWidth: 100,
+                pointBorderColor: 'transparent',
+                pointRadius: 3,
+                pointBackgroundColor: 'transparent'
+            }
+        ]
+    },
+
+    // Configuration options go here
+    options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        legend: {
+            display: false
+        },
+        title: {
+            display: false,
+        },
+        tooltips: {
+            mode: 'index',
+            intersect: false
+        },
+        hover: {
+            mode: 'nearest',
+            intersect: true
+        },
+        layout: {
+            padding: {
+                left: -30,
+                top: 10,
+                bottom: 20
+            }
+        },
+        scales: {
+            xAxes: [
+                {
+                    gridLines: {
+                        drawBorder: false,
+                        display: false
+                    },
+                    ticks: {
+                        display: false
+                    }
+                }
+            ], 
+            yAxes: [
+                {
+                    gridLines: {
+                        drawBorder: false,
+                        display: false
+                    },
+                    ticks: {
+                        display: false
+                    }
+                }
+            ], 
+        }
+    }
+});
+
+const ctx_netincome = document.getElementById('canvas-netincome');
+var chart_netincome = new Chart(ctx_netincome, {
+    // The type of chart we want to create
+    type: 'line',
+
+    // The data for our dataset
+    data: {
+        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+        datasets: [
+            {
+                label: 'Net Income',
+                backgroundColor: '#fff',
+                borderColor: '#fff',
+                data: [80, 90, 100, 40, 30, 50, 80],
+                fill: false,
+                pointBorderWidth: 100,
+                pointBorderColor: 'transparent',
+                pointRadius: 3,
+                pointBackgroundColor: 'transparent'
+            }
+        ]
+    },
+
+    // Configuration options go here
+    options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        legend: {
+            display: false
+        },
+        title: {
+            display: false,
+        },
+        tooltips: {
+            mode: 'index',
+            intersect: false
+        },
+        hover: {
+            mode: 'nearest',
+            intersect: true
+        },
+        layout: {
+            padding: {
+                left: -30,
+                top: 10,
+                bottom: 20
+            }
+        },
+        scales: {
+            xAxes: [
+                {
+                    gridLines: {
+                        drawBorder: false,
+                        display: false
+                    },
+                    ticks: {
+                        display: false
+                    }
+                }
+            ], 
+            yAxes: [
+                {
+                    gridLines: {
+                        drawBorder: false,
+                        display: false
+                    },
+                    ticks: {
+                        display: false
+                    }
+                }
+            ], 
+        }
+    }
+});
+
+const ctx_finance = document.getElementById('canvas-finance');
+var chart_finance = new Chart(ctx_finance, {
+    // The type of chart we want to create
+    type: 'line',
+
+    // The data for our dataset
+    data: {
+        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+        datasets: [
+            {
+                label: 'Finance',
+                backgroundColor: '#fff',
+                borderColor: '#fff',
+                data: [20, 50, 60, 40, 50, 60, 70],
+                fill: false,
+                pointBorderWidth: 100,
+                pointBorderColor: 'transparent',
+                pointRadius: 3,
+                pointBackgroundColor: 'transparent'
+            }
+        ]
+    },
+
+    // Configuration options go here
+    options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        legend: {
+            display: false
+        },
+        title: {
+            display: false,
+        },
+        tooltips: {
+            mode: 'index',
+            intersect: false
+        },
+        hover: {
+            mode: 'nearest',
+            intersect: true
+        },
+        layout: {
+            padding: {
+                left: -30,
+                top: 10,
+                bottom: 20
+            }
+        },
+        scales: {
+            xAxes: [
+                {
+                    gridLines: {
+                        drawBorder: false,
+                        display: false
+                    },
+                    ticks: {
+                        display: false
+                    }
+                }
+            ], 
+            yAxes: [
+                {
+                    gridLines: {
+                        drawBorder: false,
+                        display: false
+                    },
+                    ticks: {
+                        display: false
+                    }
+                }
+            ], 
+        }
+    }
+});
+
+const ctx_visitor = document.getElementById('canvas-visitor');
+var chart_visitor = new Chart(ctx_visitor, {
+    // The type of chart we want to create
+    type: 'line',
+
+    // The data for our dataset
+    data: {
+        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+        datasets: [
+            {
+                label: 'Visitor',
+                backgroundColor: '#fff',
+                borderColor: '#fff',
+                data: [10, 20, 30, 60, 50, 40, 70],
+                fill: false,
+                pointBorderWidth: 100,
+                pointBorderColor: 'transparent',
+                pointRadius: 3,
+                pointBackgroundColor: 'transparent'
+            }
+        ]
+    },
+
+    // Configuration options go here
+    options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        legend: {
+            display: false
+        },
+        title: {
+            display: false,
+        },
+        tooltips: {
+            mode: 'index',
+            intersect: false
+        },
+        hover: {
+            mode: 'nearest',
+            intersect: true
+        },
+        layout: {
+            padding: {
+                left: -30,
+                top: 10,
+                bottom: 20
+            }
+        },
+        scales: {
+            xAxes: [
+                {
+                    gridLines: {
+                        drawBorder: false,
+                        display: false
+                    },
+                    ticks: {
+                        display: false
+                    }
+                }
+            ], 
+            yAxes: [
+                {
+                    gridLines: {
+                        drawBorder: false,
+                        display: false
+                    },
+                    ticks: {
+                        display: false
+                    }
+                }
+            ], 
+        }
+    }
+});
+
+const ctx_transaction = document.getElementById('canvas-transaction');
+var chart_transaction = new Chart(ctx_transaction, {
+    // The type of chart we want to create
+    type: 'bar',
+
+    // The data for our dataset
+    data: {
+        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+        datasets: [
+            {
+                label: 'Transactions',
+                backgroundColor: [
+                    'rgba(0, 0, 0, 0.3)',
+                    'rgba(0, 0, 0, 0.3)',
+                    'rgba(0, 0, 0, 0.3)',
+                    '#0dcaf0',
+                    '#0d68f0',
+                    'rgba(0, 0, 0, 0.3)',
+                    'rgba(0, 0, 0, 0.3)'
+                ],
+                borderColor: '#fff',
+                data: [10, 20, 30, 60, 50, 40, 70],
+                fill: false,
+                pointBorderWidth: 100,
+                pointBorderColor: 'transparent',
+                pointRadius: 3,
+                pointBackgroundColor: 'transparent'
+            }
+        ]
+    },
+
+    // Configuration options go here
+    options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        legend: {
+            display: false
+        },
+        title: {
+            display: false,
+        },
+        tooltips: {
+            mode: 'index',
+            intersect: false
+        },
+        hover: {
+            mode: 'nearest',
+            intersect: true
+        },
+        layout: {
+            padding: {
+                bottom: 10,
+            }
+        },
+        scales: {
+            xAxes: [
+                {
+                    gridLines: {
+                        drawBorder: false,
+                        display: false
+                    },
+                    ticks: {
+                        display: true
+                    }
+                }
+            ],
+        }
+    }
+});
