@@ -11,17 +11,21 @@ a {
 
 /* Sidebar */
 .sidebar-wrapper {
+    position: fixed;
+    top: 0;
+    left: -275px;
     width: 275px;
     height: 100vh;
-    left: 0;
     overflow-y: auto;
+    transition: 1s;
+}
+
+.sidebar-open {
+    left: 0;
 }
 
 .sidebar-header .close-sidebar-button {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 3px;
+    display: none;
 }
 
 .sidebar-menu .nav-link {
@@ -56,6 +60,11 @@ a {
 .main {
     margin-left: 275px;
     height: 100vh;
+    transition: 1s;
+}
+
+.main-full {
+    margin-left: 0px;
 }
 
 .main .nav-link {
@@ -108,4 +117,27 @@ a {
 
 .main .main-data .activity-bar .act-3 {
     background-color: #2781B4;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 790px) {
+    .sidebar-header .close-sidebar-button {
+        display: inline-block;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        font-size: 20px;
+        background: transparent;
+        border: none;
+        transition: 1s;
+    }
+
+    .sidebar-wrapper {
+        z-index: 10;
+    }
+
+    .main {
+        margin-left: 0;
+    }
 }

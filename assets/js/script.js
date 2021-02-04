@@ -6,6 +6,22 @@ Array.prototype.forEach.call(els_nav, (el) => {
     })
 });
 
+const sidebar_window = document.getElementById('sidebar-window'); // Sidebar
+const sidebar_window_close = document.getElementById('sidebar-window-close'); // Sidebar Close
+const sidebar_window_button = document.getElementById('sidebar-window-button'); // Sidebar Button
+const main_content = document.getElementById('main-content');
+
+sidebar_window_button.addEventListener('click', () => {
+    sidebar_window.classList.toggle('sidebar-open');
+    main_content.classList.toggle('main-full');
+});
+
+sidebar_window_close.addEventListener('click', () => {
+    sidebar_window.classList.toggle('sidebar-open');
+    main_content.classList.toggle('main-full');
+});
+
+// Chart
 var ctx_revenue = document.getElementById('canvas-revenue');
 var chart_revenue = new Chart(ctx_revenue, {
     // The type of chart we want to create
