@@ -133,12 +133,13 @@ a {
     .sidebar-header .close-sidebar-button {
         display: inline-block;
         position: absolute;
-        top: 5px;
-        right: 5px;
+        top: 10px;
+        right: 10px;
         font-size: 20px;
         background: transparent;
         border: none;
         transition: 1s;
+        color: grey;
     }
 
     .sidebar-wrapper {
