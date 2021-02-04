@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Free Bootstrap Admin Template">
+        <meta name="keywords" content="html, css, js, bootstrap, admin, template, dashboard">
+        <meta name="author" content="Wahyu Amirulloh">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>Dashboard - Spatu</title>
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <!-- Local CSS -->
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/3bea811d2b.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!-- Sidebar (start) -->
+        <div class="sidebar-wrapper float-left bg-white sidebar-open" id="sidebar-window">
+            <div class="sidebar-header">
+                <div class="sidebar-header_title text-center my-3 fs-3 text-secondary">
+                    <span>Spatu!</span>
+                    <button class="close-sidebar-button" id="sidebar-window-close"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+            <div class="sidebar-menu my-4">
+                <div class="nav-list my-3">
+                    <p class="nav-title text-secondary mx-3 my-1">Main Menu</p>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="#"><i class="fas fa-home mx-3"></i>Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link dropdown nav-dropdown"href="#"><i class="fas fa-play mx-3"></i>Components</a>
+                            <ul class="nav flex-column ms-5 submenu submenu-hidden" id="submenu-dropdown">
+                                <a href="./index.html"><li class="nav-item p-2 ps-4">Alert</li></a>
+                                <a href="#"><li class="nav-item p-2 ps-4">Badge</li></a>
+                                <a href="#"><li class="nav-item p-2 ps-4">Breadcrumb</li></a>
+                                <a href="#"><li class="nav-item p-2 ps-4">Buttons</li></a>
+                                <a href="#"><li class="nav-item p-2 ps-4">Card</li></a>
+                                <a href="#"><li class="nav-item p-2 ps-4">Carousel</li></a>
+                                <a href="#"><li class="nav-item p-2 ps-4">Dropdown</li></a>
+                                <a href="#"><li class="nav-item p-2 ps-4">List group</li></a>
+                                <a href="#"><li class="nav-item p-2 ps-4">Modal</li></a>
+                                <a href="#"><li class="nav-item p-2 ps-4">Navs</li></a>
+                                <a href="#"><li class="nav-item p-2 ps-4">Pagination</li></a>
+                                <a href="#"><li class="nav-item p-2 ps-4">Progress</li></a>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-list my-3">
+                    <p class="nav-title text-secondary mx-3 my-1">Forms and Tables</p>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link dropdown nav-dropdown" href="#"><i class="far fa-file-alt mx-3"></i>Form Elements</a>
+                            <ul class="nav flex-column ms-5 submenu submenu-hidden" id="submenu-dropdown">
+                                <a href="#"><li class="nav-item p-2 ps-4">Input</li></a>
+                                <a href="#"><li class="nav-item p-2 ps-4">Input group</li></a>
+                                <a href="#"><li class="nav-item p-2 ps-4">Select</li></a>
+                                <a href="#"><li class="nav-item p-2 ps-4">Radio</li></a>
+                                <a href="#"><li class="nav-item p-2 ps-4">Checkbox</li></a>
+                                <a href="#"><li class="nav-item p-2 ps-4">Textarea</li></a>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#"><i class="far fa-file mx-3"></i>Form Layout</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#"><i class="far fa-edit mx-3"></i>Form Editor</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-grip-horizontal mx-3"></i>Table</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-list my-3">
+                    <p class="nav-title text-secondary mx-3 my-1">Extra UI</p>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link dropdown nav-dropdown" aria-current="page" href="#"><i class="far fa-clone mx-3"></i>Widgets</a>
+                            <ul class="nav flex-column ms-5 submenu submenu-hidden">
+                                <a href="#"><li class="nav-item p-2 ps-4">Chatbox</li></a>
+                                <a href="#"><li class="nav-item p-2 ps-4">Pricing</li></a>
+                                <a href="#"><li class="nav-item p-2 ps-4">To-Do List</li></a>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#"><i class="fas fa-chart-line mx-3"></i>Charts</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-list my-3">
+                    <p class="nav-title text-secondary mx-3 my-1">Pages</p>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link dropdown nav-dropdown" aria-current="page" href="#"><i class="far fa-clone mx-3"></i>Authentication</a>
+                            <ul class="nav flex-column ms-5 submenu submenu-hidden">
+                                <a href="#"><li class="nav-item p-2 ps-4">Login</li></a>
+                                <a href="#"><li class="nav-item p-2 ps-4">Register</li></a>
+                                <a href="#"><li class="nav-item p-2 ps-4">Forgot Password</li></a>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link dropdown nav-dropdown" href="#"><i class="fas fa-chart-line mx-3"></i>Error</a>
+                            <ul class="nav flex-column ms-5 submenu submenu-hidden">
+                                <a href="#"><li class="nav-item p-2 ps-4">403</li></a>
+                                <a href="#"><li class="nav-item p-2 ps-4">404</li></a>
+                                <a href="#"><li class="nav-item p-2 ps-4">500</li></a>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Sidebar (end) -->
+        <div class="main bg-light float-right" id="main-content">
+            <!-- Topbar (start) -->
+            <nav class="navbar navbar-expand navbar-light bg-light">
+                <div class="container-fluid">
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav d-flex justify-content-between container-fluid">
+                            <li class="nav-item my-1">
+                                <a class="nav-link" href="#" id="sidebar-window-button"><i class="fas fa-bars"></i></a>
+                            </li>
+                            <li class="nav-item nav-item-right d-flex">
+                                <a class="nav-link mx-2 my-1" href="#"><i class="far fa-bell"></i></a>
+                                <a class="nav-link mx-2 my-1" href="#"><i class="far fa-envelope"></i></a>
+                                <a class="nav-link" href="#">
+                                    <img src="./assets/image/128x128.png" id="avatar-image" class="mx-2"><span id="avatar-text" class="text-secondary">Hi, Wahyu A</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Topbar (end) -->
+            <!-- Content (start)-->
+            <div class="main-content container-fluid bg-light">
+                <div class="page-title mx-2 my-1">
+                    <h3>Alert</h3>
+                    <p class="text-muted">Component alert to give message to users</p>
+                </div>
+                <section>
+                    <div class="row">
+                        <div class="col-lg-6 col-12">
+                            <div class="col-12 my-3">
+                                <div class="card card border-0 shadow-sm p-4 mx-1">
+                                    <h5 class="mb-4">Basic</h5>
+                                    <div class="card alert border-0 shadow-sm px-3 py-3 my-3 alert-danger-spatu">
+                                        <strong>Danger Alert</strong>
+                                    </div>
+                                    <div class="card alert border-0 shadow-sm px-3 py-3 my-3 alert-warning-spatu">
+                                        <strong>Warning Alert</strong>
+                                    </div>
+                                    <div class="card alert border-0 shadow-sm px-3 py-3 my-3 alert-success-spatu">
+                                        <strong>Success Alert</strong>
+                                    </div>
+                                    <div class="card alert border-0 shadow-sm px-3 py-3 my-3 alert-info-spatu">
+                                        <strong>Info Alert</strong>
+                                    </div>
+                                    <div class="card alert border-0 shadow-sm px-3 py-3 my-3 alert-secondary-spatu">
+                                        <strong>Secondary Alert</strong>
+                                    </div>
+                                    <div class="card alert border-0 shadow-sm px-3 py-3 my-3 alert-dark-spatu">
+                                        <strong>Dark Alert</strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 my-1">
+                                <div class="card card border-0 shadow-sm p-4 mx-1">
+                                    <h5 class="mb-4">Basic Small</h5>
+                                    <div class="card alert border-0 shadow-sm px-3 py-2 my-3 alert-danger-spatu">
+                                        <small>Danger Alert</small>
+                                    </div>
+                                    <div class="card alert border-0 shadow-sm px-3 py-2 my-3 alert-warning-spatu">
+                                        <small>Warning Alert</small>
+                                    </div>
+                                    <div class="card alert border-0 shadow-sm px-3 py-2 my-3 alert-success-spatu">
+                                        <small>Success Alert</small>
+                                    </div>
+                                    <div class="card alert border-0 shadow-sm px-3 py-2 my-3 alert-info-spatu">
+                                        <small>Info Alert</small>
+                                    </div>
+                                    <div class="card alert border-0 shadow-sm px-3 py-2 my-3 alert-secondary-spatu">
+                                        <small>Secondary Alert</small>
+                                    </div>
+                                    <div class="card alert border-0 shadow-sm px-3 py-2 my-3 alert-dark-spatu">
+                                        <small>Info Dark</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 my-1">
+                                <div class="card card border-0 shadow-sm p-4 mx-1">
+                                    <h5 class="mb-4">Basic Small with icon</h5>
+                                    <div class="card alert border-0 shadow-sm px-3 py-2 my-3 alert-danger-spatu">
+                                        <small><i class="fas fa-info-circle mx-2"></i>Danger Alert</small>
+                                    </div>
+                                    <div class="card alert border-0 shadow-sm px-3 py-2 my-3 alert-warning-spatu">
+                                        <small><i class="fas fa-info-circle mx-2"></i>Warning Alert</small>
+                                    </div>
+                                    <div class="card alert border-0 shadow-sm px-3 py-2 my-3 alert-success-spatu">
+                                        <small><i class="fas fa-info-circle mx-2"></i>Success Alert</small>
+                                    </div>
+                                    <div class="card alert border-0 shadow-sm px-3 py-2 my-3 alert-info-spatu">
+                                        <small><i class="fas fa-info-circle mx-2"></i>Info Alert</small>
+                                    </div>
+                                    <div class="card alert border-0 shadow-sm px-3 py-2 my-3 alert-secondary-spatu">
+                                        <small><i class="fas fa-info-circle mx-2"></i>Secondary Alert</small>
+                                    </div>
+                                    <div class="card alert border-0 shadow-sm px-3 py-2 my-3 alert-dark-spatu">
+                                        <small><i class="fas fa-info-circle mx-2"></i>Dark Alert</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="col-12 my-3">
+                                <div class="card card border-0 shadow-sm p-4 mx-1">
+                                    <h5 class="mb-4">Basic with text</h5>
+                                    <div class="card alert border-0 shadow-sm px-3 py-3 my-3 alert-danger-spatu">
+                                        <strong>Danger Alert</strong>
+                                        <small>This is our north star design. Marketing computer development html roi feedback team website we need to have a Come to meeting</small>
+                                        <button class="alert-close-button"><span>×</span></button>
+                                    </div>
+                                    <div class="card alert border-0 shadow-sm px-3 py-3 my-3 alert-warning-spatu">
+                                        <strong>Warning Alert</strong>
+                                        <small>This is our north star design. Marketing computer development html roi feedback team website we need to have a Come to meeting</small>
+                                        <button class="alert-close-button"><span>×</span></button>
+                                    </div>
+                                    <div class="card alert border-0 shadow-sm px-3 py-3 my-3 alert-success-spatu">
+                                        <strong>Success Alert</strong>
+                                        <small>This is our north star design. Marketing computer development html roi feedback team website we need to have a Come to meeting</small>
+                                        <button class="alert-close-button"><span>×</span></button>
+                                    </div>
+                                    <div class="card alert border-0 shadow-sm px-3 py-3 my-3 alert-info-spatu">
+                                        <strong>Info Alert</strong>
+                                        <small>This is our north star design. Marketing computer development html roi feedback team website we need to have a Come to meeting</small>
+                                        <button class="alert-close-button"><span>×</span></button>
+                                    </div>
+                                    <div class="card alert border-0 shadow-sm px-3 py-3 my-3 alert-secondary-spatu">
+                                        <strong>Secondary Alert</strong>
+                                        <small>This is our north star design. Marketing computer development html roi feedback team website we need to have a Come to meeting</small>
+                                        <button class="alert-close-button"><span>×</span></button>
+                                    </div>
+                                    <div class="card alert border-0 shadow-sm px-3 py-3 my-3 alert-dark-spatu">
+                                        <strong>Dark Alert</strong>
+                                        <small>This is our north star design. Marketing computer development html roi feedback team website we need to have a Come to meeting</small>
+                                        <button class="alert-close-button"><span>×</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 my-1">
+                                <div class="card card border-0 shadow-sm p-4 mx-1">
+                                    <h5 class="mb-4">Basic Dismissable</h5>
+                                    <div class="card alert border-0 shadow-sm px-3 py-2 my-3 alert-danger-spatu">
+                                        <small>Danger Alert</small>
+                                        <button class="alert-close-button"><span>×</span></button>
+                                    </div>
+                                    <div class="card alert border-0 shadow-sm px-3 py-2 my-3 alert-warning-spatu">
+                                        <small>Warning Alert</small>
+                                        <button class="alert-close-button"><span>×</span></button>
+                                    </div>
+                                    <div class="card alert border-0 shadow-sm px-3 py-2 my-3 alert-success-spatu">
+                                        <small>Success Alert</small>
+                                        <button class="alert-close-button"><span>×</span></button>
+                                    </div>
+                                    <div class="card alert border-0 shadow-sm px-3 py-2 my-3 alert-info-spatu">
+                                        <small>Info Alert</small>
+                                        <button class="alert-close-button"><span>×</span></button>
+                                    </div>
+                                    <div class="card alert border-0 shadow-sm px-3 py-2 my-3 alert-secondary-spatu">
+                                        <small>Secondary Alert</small>
+                                        <button class="alert-close-button"><span>×</span></button>
+                                    </div>
+                                    <div class="card alert border-0 shadow-sm px-3 py-2 my-3 alert-dark-spatu">
+                                        <small>Dark Alert</small>
+                                        <button class="alert-close-button"><span>×</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- Content (end) -->
+        </div>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script> -->
+        <script src="./assets/js/script.js"></script>
+    </body>
+</html>

@@ -6,6 +6,17 @@ Array.prototype.forEach.call(els_nav, (el) => {
     })
 });
 
+document.getElementsByClassName('alert-close-button');
+var els_nav = document.getElementsByClassName('alert-close-button');
+Array.prototype.forEach.call(els_nav, (el) => {
+    el.addEventListener('click', () => {
+        el.parentNode.classList.add('hidden');
+        setTimeout(() => {
+            el.parentNode.style.display = 'none';
+        }, 500)
+    });
+});
+
 const sidebar_window = document.getElementById('sidebar-window'); // Sidebar
 const sidebar_window_close = document.getElementById('sidebar-window-close'); // Sidebar Close
 const sidebar_window_button = document.getElementById('sidebar-window-button'); // Sidebar Button
