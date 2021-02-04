@@ -82,14 +82,22 @@ a {
 .main .main-data .graph-top .card-canvas {
     width: 100%;
     height: 150px;
-    background-color: #0dcaf0 ;
+    background-color: #0dcaf0;
+    padding: 1rem;
 }
 
 .main .main-data .graph .card-canvas {
     width: 100%;
-    height: 300px;
 }
 
+.main .main-data .graph .card-canvas-portfolios {
+    height: 400px;
+}
+
+.main .main-data .graph .card-canvas .text-data {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 .main .main-data .graph .card-canvas canvas {
     height: 250px;
 }
@@ -139,5 +147,14 @@ a {
 
     .main {
         margin-left: 0;
+    }
+
+    .main .main-data .graph .card-canvas-portfolios {
+        height: 400px;
+    }
+
+    .main .main-data .graph .card-canvas .text-data{
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 }

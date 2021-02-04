@@ -417,12 +417,6 @@ var chart_portfolios = new Chart(ctx_portfolios, {
         },
         title: {
             display: false
-        },
-        layout: {
-            padding: {
-                top: 20,
-                bottom: 20
-            },
         }
     }
 });
