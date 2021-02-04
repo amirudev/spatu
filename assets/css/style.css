@@ -127,8 +127,8 @@ a {
     background-color: #2781B4;
 }
 
-/* Component Card */
-.card .alert-close-button {
+/* Component Alert */
+.alert-close-button {
     position: absolute;
     right: 10px;
     border: none;
@@ -143,6 +143,16 @@ a {
 .hidden {
     transition: 0.5s;
     opacity: 0;
+}
+
+/* Component Badge */
+.badge {
+    border-radius: 20px;
+}
+
+/* Component Button */
+.btn {
+    border-radius: 7px;
 }
 
 /* Responsive */
@@ -179,32 +189,32 @@ a {
 }
 
 /* Colors */
-.alert-danger-spatu {
+.color-danger-spatu {
     background-color: #fee3d5;
     color: #fb3030;
 }
 
-.alert-warning-spatu {
+.color-warning-spatu {
     background-color: #fff5d6;
     color: #ffab36;
 }
 
-.alert-success-spatu {
+.color-success-spatu {
     background-color: #edfdd4;
     color: #6be42b;
 }
 
-.alert-info-spatu {
+.color-info-spatu {
     background-color: #dff3ff;
     color: #5fa9ff;
 }
 
-.alert-secondary-spatu {
+.color-secondary-spatu {
     background-color: #eeeeee;
     color: #333333;
 }
 
-.alert-dark-spatu {
+.color-dark-spatu {
     background-color: #333333;
     color: #eeeeee;
 }

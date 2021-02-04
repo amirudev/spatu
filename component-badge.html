@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Free Bootstrap Admin Template">
+        <meta name="keywords" content="html, css, js, bootstrap, admin, template, dashboard">
+        <meta name="author" content="Wahyu Amirulloh">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>Dashboard - Spatu</title>
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <!-- Local CSS -->
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/3bea811d2b.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!-- Sidebar (start) -->
+        <div class="sidebar-wrapper float-left bg-white sidebar-open" id="sidebar-window">
+            <div class="sidebar-header">
+                <div class="sidebar-header_title text-center my-3 fs-3 text-secondary">
+                    <span>Spatu!</span>
+                    <button class="close-sidebar-button" id="sidebar-window-close"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+            <div class="sidebar-menu my-4">
+                <div class="nav-list my-3">
+                    <p class="nav-title text-secondary mx-3 my-1">Main Menu</p>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="./index.html"><i class="fas fa-home mx-3"></i>Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link dropdown nav-dropdown"href="#"><i class="fas fa-play mx-3"></i>Components</a>
+                            <ul class="nav flex-column ms-5 submenu submenu-hidden" id="submenu-dropdown">
+                                <a href="./component-alert.html"><li class="nav-item p-2 ps-4">Alert</li></a>
+                                <a href="#"><li class="nav-item p-2 ps-4">Badge</li></a>
+                                <a href="#"><li class="nav-item p-2 ps-4">Breadcrumb</li></a>
+                                <a href="#"><li class="nav-item p-2 ps-4">Buttons</li></a>
+                                <a href="#"><li class="nav-item p-2 ps-4">Card</li></a>
+                                <a href="#"><li class="nav-item p-2 ps-4">Carousel</li></a>
+                                <a href="#"><li class="nav-item p-2 ps-4">Dropdown</li></a>
+                                <a href="#"><li class="nav-item p-2 ps-4">List group</li></a>
+                                <a href="#"><li class="nav-item p-2 ps-4">Modal</li></a>
+                                <a href="#"><li class="nav-item p-2 ps-4">Navs</li></a>
+                                <a href="#"><li class="nav-item p-2 ps-4">Pagination</li></a>
+                                <a href="#"><li class="nav-item p-2 ps-4">Progress</li></a>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-list my-3">
+                    <p class="nav-title text-secondary mx-3 my-1">Forms and Tables</p>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link dropdown nav-dropdown" href="#"><i class="far fa-file-alt mx-3"></i>Form Elements</a>
+                            <ul class="nav flex-column ms-5 submenu submenu-hidden" id="submenu-dropdown">
+                                <a href="#"><li class="nav-item p-2 ps-4">Input</li></a>
+                                <a href="#"><li class="nav-item p-2 ps-4">Input group</li></a>
+                                <a href="#"><li class="nav-item p-2 ps-4">Select</li></a>
+                                <a href="#"><li class="nav-item p-2 ps-4">Radio</li></a>
+                                <a href="#"><li class="nav-item p-2 ps-4">Checkbox</li></a>
+                                <a href="#"><li class="nav-item p-2 ps-4">Textarea</li></a>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#"><i class="far fa-file mx-3"></i>Form Layout</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#"><i class="far fa-edit mx-3"></i>Form Editor</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-grip-horizontal mx-3"></i>Table</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-list my-3">
+                    <p class="nav-title text-secondary mx-3 my-1">Extra UI</p>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link dropdown nav-dropdown" aria-current="page" href="#"><i class="far fa-clone mx-3"></i>Widgets</a>
+                            <ul class="nav flex-column ms-5 submenu submenu-hidden">
+                                <a href="#"><li class="nav-item p-2 ps-4">Chatbox</li></a>
+                                <a href="#"><li class="nav-item p-2 ps-4">Pricing</li></a>
+                                <a href="#"><li class="nav-item p-2 ps-4">To-Do List</li></a>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#"><i class="fas fa-chart-line mx-3"></i>Charts</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-list my-3">
+                    <p class="nav-title text-secondary mx-3 my-1">Pages</p>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link dropdown nav-dropdown" aria-current="page" href="#"><i class="far fa-clone mx-3"></i>Authentication</a>
+                            <ul class="nav flex-column ms-5 submenu submenu-hidden">
+                                <a href="#"><li class="nav-item p-2 ps-4">Login</li></a>
+                                <a href="#"><li class="nav-item p-2 ps-4">Register</li></a>
+                                <a href="#"><li class="nav-item p-2 ps-4">Forgot Password</li></a>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link dropdown nav-dropdown" href="#"><i class="fas fa-chart-line mx-3"></i>Error</a>
+                            <ul class="nav flex-column ms-5 submenu submenu-hidden">
+                                <a href="#"><li class="nav-item p-2 ps-4">403</li></a>
+                                <a href="#"><li class="nav-item p-2 ps-4">404</li></a>
+                                <a href="#"><li class="nav-item p-2 ps-4">500</li></a>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Sidebar (end) -->
+        <div class="main bg-light float-right" id="main-content">
+            <!-- Topbar (start) -->
+            <nav class="navbar navbar-expand navbar-light bg-light">
+                <div class="container-fluid">
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav d-flex justify-content-between container-fluid">
+                            <li class="nav-item my-1">
+                                <a class="nav-link" href="#" id="sidebar-window-button"><i class="fas fa-bars"></i></a>
+                            </li>
+                            <li class="nav-item nav-item-right d-flex">
+                                <a class="nav-link mx-2 my-1" href="#"><i class="far fa-bell"></i></a>
+                                <a class="nav-link mx-2 my-1" href="#"><i class="far fa-envelope"></i></a>
+                                <a class="nav-link" href="#">
+                                    <img src="./assets/image/128x128.png" id="avatar-image" class="mx-2"><span id="avatar-text" class="text-secondary">Hi, Wahyu A</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Topbar (end) -->
+            <!-- Content (start)-->
+            <div class="main-content container-fluid bg-light">
+                <div class="page-title mx-2 my-1">
+                    <h3>Badge</h3>
+                    <p class="text-muted">Badge to support your information !</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-12">
+                        <div class="col-12 my-3">
+                            <div class="card border-0 shadow-sm p-4 mx-1 my-2">
+                                <h5>Heading</h5>
+                                <hr>
+                                <h1>Heading Badge <span class="badge color-danger-spatu">Info!</span></h1>
+                                <h2>Heading Badge <span class="badge color-warning-spatu">Info!</span></h2>
+                                <h3>Heading Badge <span class="badge color-success-spatu">Info!</span></h3>
+                                <h4>Heading Badge <span class="badge color-info-spatu">Info!</span></h4>
+                                <h5>Heading Badge <span class="badge color-secondary-spatu">Info!</span></h5>
+                                <h6>Heading Badge <span class="badge color-dark-spatu">Info!</span></h6>
+                            </div>
+                        </div>
+                        <div class="col-12 my-3">
+                            <div class="card border-0 shadow-sm p-4 mx-1 my-2">
+                                <h5>Variation</h5>
+                                <div>
+                                    <span class="badge color-danger-spatu">Primary</span>
+                                    <span class="badge color-warning-spatu">Secondary</span>
+                                    <span class="badge color-success-spatu">Success</span>
+                                    <span class="badge color-info-spatu">Info</span>
+                                    <span class="badge color-secondary-spatu">Secondary</span>
+                                    <span class="badge color-dark-spatu">Dark</span>
+                                </div>
+                            </div>
+                            <div class="card border-0 shadow-sm p-4 mx-1 my-2">
+                                <h5>Variation Links</h5>
+                                <div>
+                                    <a href="#"><span class="badge color-danger-spatu">Primary</span></a>
+                                    <a href="#"><span class="badge color-warning-spatu">Secondary</span></a>
+                                    <a href="#"><span class="badge color-success-spatu">Success</span></a>
+                                    <a href="#"><span class="badge color-info-spatu">Info</span></a>
+                                    <a href="#"><span class="badge color-secondary-spatu">Secondary</span></a>
+                                    <a href="#"><span class="badge color-dark-spatu">Dark</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="col-12 my-3">
+                            <div class="card border-0 shadow-sm p-4 mx-1">
+                                <h5>Button</h5>
+                                <hr>
+                                <div>
+                                    <button type="button" class="btn mx-1 my-1 color-danger-spatu">
+                                        Notifications <span class="badge color-danger-spatu bg-white">4</span>
+                                    </button>
+                                    <button type="button" class="btn mx-1 my-1 color-warning-spatu">
+                                        Notifications <span class="badge color-warning-spatu bg-white">4</span>
+                                    </button>
+                                    <button type="button" class="btn mx-1 my-1 color-success-spatu">
+                                        Notifications <span class="badge color-success-spatu bg-white">4</span>
+                                    </button>
+                                    <button type="button" class="btn mx-1 my-1 color-info-spatu">
+                                        Notifications <span class="badge color-info-spatu bg-white">4</span>
+                                    </button>
+                                    <button type="button" class="btn mx-1 my-1 color-secondary-spatu">
+                                        Notifications <span class="badge color-secondary-spatu bg-white">4</span>
+                                    </button>
+                                    <button type="button" class="btn mx-1 my-1 color-dark-spatu">
+                                        Notifications <span class="badge color-dark-spatu bg-white text-dark">4</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 my-3">
+                            <div class="card border-0 shadow-sm p-4 mx-1">
+                                <h5>Button</h5>
+                                <hr>
+                                <div>
+                                    <button type="button" class="btn mx-1 my-1 color-danger-spatu">
+                                        Notifications <span class="badge color-danger-spatu bg-white"><i class="fas fa-flag"></i></span>
+                                    </button>
+                                    <button type="button" class="btn mx-1 my-1 color-warning-spatu">
+                                        Notifications <span class="badge color-warning-spatu bg-white"><i class="fas fa-flag"></i></span>
+                                    </button>
+                                    <button type="button" class="btn mx-1 my-1 color-success-spatu">
+                                        Notifications <span class="badge color-success-spatu bg-white"><i class="fas fa-flag"></i></span>
+                                    </button>
+                                    <button type="button" class="btn mx-1 my-1 color-info-spatu">
+                                        Notifications <span class="badge color-info-spatu bg-white"><i class="fas fa-flag"></i></span>
+                                    </button>
+                                    <button type="button" class="btn mx-1 my-1 color-secondary-spatu">
+                                        Notifications <span class="badge color-secondary-spatu bg-white"><i class="fas fa-flag"></i></span>
+                                    </button>
+                                    <button type="button" class="btn mx-1 my-1 color-dark-spatu">
+                                        Notifications <span class="badge color-dark-spatu bg-white text-dark"><i class="fas fa-flag"></i></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Content (end) -->
+        </div>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script> -->
+        <script src="./assets/js/script.js"></script>
+    </body>
+</html>
