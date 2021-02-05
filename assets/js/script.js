@@ -32,6 +32,16 @@ sidebar_window_close.addEventListener('click', () => {
     main_content.classList.toggle('main-full');
 });
 
+
+// Component Dropdown
+var els_nav = document.getElementsByClassName('dropdown-toggle');
+Array.prototype.forEach.call(els_nav, (el) => {
+    el.addEventListener('click', () => {
+        el.nextSibling.nextSibling.style.display = 'inline-block';
+    });
+});
+
+
 // Chart
 var ctx_revenue = document.getElementById('canvas-revenue');
 var chart_revenue = new Chart(ctx_revenue, {
