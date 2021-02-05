@@ -213,122 +213,150 @@ a {
 }
 
 /* Colors */
+.color-primary-spatu {
+    background-color: #3b89ff;
+    color: white;
+}
+
+.color-primary-spatu:hover {
+    background-color: #0066ff;
+    color: white;
+}
+
 .color-danger-spatu {
-    background-color: #fee3d5;
-    color: #fb3030;
+    background-color: rgba(255, 87, 2, 0.7);
+    color: white;
 }
 
 .color-danger-spatu:hover {
-    color: #ff0000;
+    background-color: rgba(255, 87, 2, 1);
+    color: white;
 }
 
 .color-warning-spatu {
-    background-color: #fff5d6;
-    color: #ffab36;
+    background-color: rgba(255, 191, 0, 0.7);
+    color: white;
 }
 
 .color-warning-spatu:hover {
-    color: #fc9300;
+    background-color: rgba(255, 191, 0, 1);
+
+    color: white;
 }
 
 .color-success-spatu {
-    background-color: #edfdd4;
-    color: #6be42b;
+    background-color: rgba(60, 255, 0, 0.7);
+    color: white;
 }
 
 .color-success-spatu:hover {
-    color: #59ff00;
+    background-color: rgba(60, 255, 0, 1);
+    color: white;
 }
 
 .color-info-spatu {
-    background-color: #dff3ff;
-    color: #5fa9ff;
+    background-color: rgba(11, 162, 255, 0.7);
+    color: white;
 }
 
 .color-info-spatu:hover {
-    color: #0077ff;
+    background-color: rgba(11, 162, 255, 1);
+    color: white;
 }
 
 .color-secondary-spatu {
-    background-color: #eeeeee;
+    background-color: rgba(221, 221, 221, 0.7);
     color: #333333;
 }
 
 .color-secondary-spatu:hover {
-    color: #000000;
+    background-color: rgba(221, 221, 221, 1);
+    color: #333333;
 }
 
 .color-dark-spatu {
-    background-color: #333333;
+    background-color: rgba(34, 34, 34, 0.7);
     color: #eeeeee;
 }
 
 .color-dark-spatu:hover {
+    background-color: rgba(34, 34, 34, 1);
     color: #ffffff;
+}
+
+.outline-primary-spatu {
+    background-color: transparent;
+    border-color: #3b89ff;
+    color: #3b89ff;
+}
+
+.outline-primary-spatu:hover {
+    background-color: #3b89ff;
+    color: white;
 }
 
 .outline-danger-spatu {
     background-color: transparent;
-    color: #ff0000;
-    border-color: #fb3030;
+    border-color: rgba(255, 87, 2, 0.7);
+    color: rgba(255, 87, 2, 0.7);
 }
 
 .outline-danger-spatu:hover {
-    background-color: #fee3d5;
-    color: #ff0000;
+    background-color: rgba(255, 87, 2, 0.7);
+    color: white;
 }
 
 .outline-warning-spatu {
     background-color: transparent;
-    color: #ffab36;
-    border-color: #ffab36;
+    border-color: rgba(255, 191, 0, 0.7);
+    color: rgba(255, 191, 0, 0.7);;
 }
 
 .outline-warning-spatu:hover {
-    background-color: #fff5d6;
-    color: #fc9300;
+    background-color: rgba(255, 191, 0, 1);;
+    color: white;
 }
 
 .outline-success-spatu {
     background-color: transparent;
-    color: #6be42b;
-    border-color: #6be42b;
+    border-color: rgba(60, 255, 0, 0.7);
+    color: rgba(60, 255, 0, 0.7);
 }
 
 .outline-success-spatu:hover {
-    background-color: #edfdd4;
-    color: #59ff00;
+    background-color: rgba(60, 255, 0, 1);
+    color: white;
 }
 
 .outline-info-spatu {
     background-color: transparent;
-    color: #5fa9ff;
-    border-color: #5fa9ff;
+    border-color: rgba(11, 162, 255, 0.7);
+    color:  rgba(11, 162, 255, 0.7);;
 }
 
 .outline-info-spatu:hover {
-    background-color: #dff3ff;
-    color: #0077ff;
+    background-color: rgba(11, 162, 255, 1);
+    color: white;
 }
 
 .outline-secondary-spatu {
     background-color: transparent;
-    color: #333333;
-    border-color: #AAAAAA;
+    border-color: rgba(146, 146, 146, 0.7);
+    color: rgba(146, 146, 146, 0.7);
 }
 
 .outline-secondary-spatu:hover {
-    background-color: #eeeeee;
-    color: #000000;
+    background-color: rgba(146, 146, 146, 1);
+    color: black;
 }
 
 .outline-dark-spatu {
     background-color: transparent;
-    color: #333333;
-    border-color: #333333;
+    border-color: rgba(34, 34, 34, 0.7);
+    color: rgba(34, 34, 34, 0.7);
 }
 
 .outline-dark-spatu:hover {
-    background-color: #333333;
-    color: #ffffff;
+    background-color:rgba(34, 34, 34, 1);
+    color: white;
 }
