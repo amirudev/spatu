@@ -194,9 +194,17 @@ a {
     color: #fb3030;
 }
 
+.color-danger-spatu:hover {
+    color: #ff0000;
+}
+
 .color-warning-spatu {
     background-color: #fff5d6;
     color: #ffab36;
+}
+
+.color-warning-spatu:hover {
+    color: #fc9300;
 }
 
 .color-success-spatu {
@@ -204,9 +212,17 @@ a {
     color: #6be42b;
 }
 
+.color-success-spatu:hover {
+    color: #59ff00;
+}
+
 .color-info-spatu {
     background-color: #dff3ff;
     color: #5fa9ff;
+}
+
+.color-info-spatu:hover {
+    color: #0077ff;
 }
 
 .color-secondary-spatu {
@@ -214,7 +230,81 @@ a {
     color: #333333;
 }
 
+.color-secondary-spatu:hover {
+    color: #000000;
+}
+
 .color-dark-spatu {
     background-color: #333333;
     color: #eeeeee;
+}
+
+.color-dark-spatu:hover {
+    color: #ffffff;
+}
+
+.outline-danger-spatu {
+    background-color: transparent;
+    color: #ff0000;
+    border-color: #fb3030;
+}
+
+.outline-danger-spatu:hover {
+    background-color: #fee3d5;
+    color: #ff0000;
+}
+
+.outline-warning-spatu {
+    background-color: transparent;
+    color: #ffab36;
+    border-color: #ffab36;
+}
+
+.outline-warning-spatu:hover {
+    background-color: #fff5d6;
+    color: #fc9300;
+}
+
+.outline-success-spatu {
+    background-color: transparent;
+    color: #6be42b;
+    border-color: #6be42b;
+}
+
+.outline-success-spatu:hover {
+    background-color: #edfdd4;
+    color: #59ff00;
+}
+
+.outline-info-spatu {
+    background-color: transparent;
+    color: #5fa9ff;
+    border-color: #5fa9ff;
+}
+
+.outline-info-spatu:hover {
+    background-color: #dff3ff;
+    color: #0077ff;
+}
+
+.outline-secondary-spatu {
+    background-color: transparent;
+    color: #333333;
+    border-color: #AAAAAA;
+}
+
+.outline-secondary-spatu:hover {
+    background-color: #eeeeee;
+    color: #000000;
+}
+
+.outline-dark-spatu {
+    background-color: transparent;
+    color: #333333;
+    border-color: #333333;
+}
+
+.outline-dark-spatu:hover {
+    background-color: #333333;
+    color: #ffffff;
 }
