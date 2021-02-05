@@ -223,6 +223,10 @@ a {
     color: white;
 }
 
+.color-primary-spatu:focus {
+    box-shadow: 0 0 0 .25rem #89b8ff;
+}
+
 .color-danger-spatu {
     background-color: rgba(255, 87, 2, 0.7);
     color: white;
@@ -233,6 +237,10 @@ a {
     color: white;
 }
 
+.color-danger-spatu:focus {
+    box-shadow: 0 0 0 .25rem rgba(253, 149, 97, 0.7);;
+}
+
 .color-warning-spatu {
     background-color: rgba(255, 191, 0, 0.7);
     color: white;
@@ -240,18 +248,25 @@ a {
 
 .color-warning-spatu:hover {
     background-color: rgba(255, 191, 0, 1);
-
     color: white;
 }
 
+.color-warning-spatu:focus {
+    box-shadow: 0 0 0 .25rem rgba(255, 221, 119, 0.7);
+}
+
 .color-success-spatu {
-    background-color: rgba(60, 255, 0, 0.7);
+    background-color: rgba(45, 194, 0, 0.7);
     color: white;
 }
 
 .color-success-spatu:hover {
-    background-color: rgba(60, 255, 0, 1);
+    background-color:rgba(60, 255, 0, 0.7);
     color: white;
+}
+
+.color-success-spatu:focus {
+    box-shadow: 0 0 0 .25rem rgba(141, 255, 106, 0.7);
 }
 
 .color-info-spatu {
@@ -264,6 +279,10 @@ a {
     color: white;
 }
 
+.color-info-spatu:focus {
+    box-shadow: 0 0 0 .25rem rgba(119, 203, 255, 0.7);
+}
+
 .color-secondary-spatu {
     background-color: rgba(221, 221, 221, 0.7);
     color: #333333;
@@ -274,6 +293,10 @@ a {
     color: #333333;
 }
 
+.color-secondary-spatu:focus {
+    box-shadow: 0 0 0 .25rem rgba(138, 138, 138, 0.7);
+}
+
 .color-dark-spatu {
     background-color: rgba(34, 34, 34, 0.7);
     color: #eeeeee;
@@ -282,6 +305,10 @@ a {
 .color-dark-spatu:hover {
     background-color: rgba(34, 34, 34, 1);
     color: #ffffff;
+}
+
+.color-dark-spatu:focus {
+    box-shadow: 0 0 0 .25rem rgba(138, 138, 138, 0.7);
 }
 
 .outline-primary-spatu {
@@ -295,6 +322,10 @@ a {
     color: white;
 }
 
+.outline-primary-spatu:focus {
+    box-shadow: 0 0 0 .25rem #89b8ff;
+}
+
 .outline-danger-spatu {
     background-color: transparent;
     border-color: rgba(255, 87, 2, 0.7);
@@ -304,6 +335,10 @@ a {
 .outline-danger-spatu:hover {
     background-color: rgba(255, 87, 2, 0.7);
     color: white;
+}
+
+.outline-danger-spatu:focus {
+    box-shadow: 0 0 0 .25rem rgba(253, 149, 97, 0.7);;
 }
 
 .outline-warning-spatu {
@@ -317,15 +352,23 @@ a {
     color: white;
 }
 
+.outline-warning-spatu:focus {
+    box-shadow: 0 0 0 .25rem rgba(255, 221, 119, 0.7);
+}
+
 .outline-success-spatu {
     background-color: transparent;
-    border-color: rgba(60, 255, 0, 0.7);
-    color: rgba(60, 255, 0, 0.7);
+    border-color: rgba(45, 194, 0, 0.7);
+    color: rgba(45, 194, 0, 0.7);
 }
 
 .outline-success-spatu:hover {
-    background-color: rgba(60, 255, 0, 1);
+    background-color: rgba(60, 255, 0, 0.7);
     color: white;
+}
+
+.outline-success-spatu:focus {
+    box-shadow: 0 0 0 .25rem rgba(141, 255, 106, 0.7);
 }
 
 .outline-info-spatu {
@@ -339,6 +382,10 @@ a {
     color: white;
 }
 
+.outline-info-spatu:focus {
+    box-shadow: 0 0 0 .25rem rgba(119, 203, 255, 0.7);
+}
+
 .outline-secondary-spatu {
     background-color: transparent;
     border-color: rgba(146, 146, 146, 0.7);
@@ -350,6 +397,10 @@ a {
     color: black;
 }
 
+.outline-secondary-spatu:focus {
+    box-shadow: 0 0 0 .25rem rgba(138, 138, 138, 0.7);
+}
+
 .outline-dark-spatu {
     background-color: transparent;
     border-color: rgba(34, 34, 34, 0.7);
@@ -359,4 +410,8 @@ a {
 .outline-dark-spatu:hover {
     background-color:rgba(34, 34, 34, 1);
     color: white;
+}
+
+.outline-dark-spatu:focus {
+    box-shadow: 0 0 0 .25rem rgba(138, 138, 138, 0.7);
 }
