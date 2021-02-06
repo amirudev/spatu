@@ -61,6 +61,7 @@ a {
     margin-left: 275px;
     height: 100vh;
     transition: 1s;
+    overflow-x: hidden;
 }
 
 .main-full {
@@ -217,7 +218,7 @@ a {
 }
 
 @media only screen and (max-width: 790px) {
-    
+
 }
 
 /* Colors */
