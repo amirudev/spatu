@@ -136,86 +136,137 @@
             <!-- Content (start) -->
             <div class="main-content container-fluid">
                 <div class="page-title mx-2 my-3">
-                    <h3>Navs</h3>
-                    <p class="text-muted">Documentation and examples for how to use Bootstrap’s included navigation components.</p>
+                    <h3>Pagination</h3>
+                    <p class="text-muted">Documentation and examples for showing pagination to indicate a series of related content exists across multiple pages.</p>
                 </div>
-                <div class="col-12">
-                    <div class="card rounded border-0 shadow mx-1 my-4 p-3">
-                        <h5>Basic</h5>
-                        <hr>
-                        <ul class="nav">
-                            <li class="nav-item">
-                              <a class="nav-link active" aria-current="page" href="#">Active</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="#">Link</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="#">Link</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                            </li>
-                        </ul>
+                <div class="row">
+                    <div class="col-lg-6 col-12">
+                        <div class="card rounded border-0 shadow mx-1 my-4 p-3">
+                            <h5 class="mx-1">Basic</h5>
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination">
+                                  <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                  <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="card rounded border-0 shadow mx-1 my-4 p-3">
+                            <h5 class="mx-1">Basic with icon</h5>
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination">
+                                  <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                      <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                  </li>
+                                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                  <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                  <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                      <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                  </li>
+                                </ul>
+                            </nav>
+                        </div>
                     </div>
-                    <div class="card rounded border-0 shadow mx-1 my-4 p-3">
-                        <h5>Tabs</h5>
-                        <hr>
-                        <ul class="nav nav-tabs">
-                            <li class="nav-item">
-                              <a class="nav-link active" aria-current="page" href="#">Active</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="#">Link</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="#">Link</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                            </li>
-                        </ul>
+                    <div class="col-lg-6 col-12">
+                        <div class="card rounded border-0 shadow mx-1 my-4 p-3">
+                            <h5 class="mx-1">Sizing</h5>
+                            <nav aria-label="...">
+                                <ul class="pagination pagination-lg">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                          <span aria-hidden="true">&laquo;</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item active" aria-current="page">
+                                        <span class="page-link">1</span>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                          <span aria-hidden="true">&raquo;</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <hr>
+                            <nav aria-label="...">
+                                <ul class="pagination pagination-sm">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                          <span aria-hidden="true">&laquo;</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item active" aria-current="page">
+                                        <span class="page-link">1</span>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                          <span aria-hidden="true">&raquo;</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
                     </div>
-                    <div class="card rounded border-0 shadow mx-1 my-4 p-3">
-                        <h5>Pills</h5>
-                        <hr>
-                        <ul class="nav nav-pills">
-                            <li class="nav-item">
-                              <a class="nav-link active" aria-current="page" href="#">Active</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="#">Link</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="#">Link</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="card rounded border-0 shadow mx-1 my-4 p-3">
-                        <h5>Rainbow</h5>
-                        <hr>
-                        <ul class="nav">
-                            <li class="nav-item">
-                              <a class="nav-link active color-primary-spatu" aria-current="page" href="#">Active</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link color-danger-spatu" href="#">Link</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link color-warning-spatu" href="#">Link</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link color-success-spatu" href="#">Link</a>
-                            </li>
-                        </ul>
+                    <div class="col-12">
+                        <div class="card rounded border-0 shadow mx-1 my-4 p-3">
+                            <h5 class="mx-1">Alignment</h5>
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination justify-content-start">
+                                  <li class="page-item disabled">
+                                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                                  </li>
+                                  <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                  <li class="page-item">
+                                    <a class="page-link" href="#">Next</a>
+                                  </li>
+                                </ul>
+                            </nav>
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination justify-content-center">
+                                  <li class="page-item disabled">
+                                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                                  </li>
+                                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                  <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                  <li class="page-item">
+                                    <a class="page-link" href="#">Next</a>
+                                  </li>
+                                </ul>
+                            </nav>
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination justify-content-end">
+                                  <li class="page-item disabled">
+                                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                                  </li>
+                                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                  <li class="page-item active"><a class="page-link" href="#">3</a></li>
+                                  <li class="page-item">
+                                    <a class="page-link" href="#">Next</a>
+                                  </li>
+                                </ul>
+                            </nav>
+                        </div>
                     </div>
                 </div>
             </div>
             <!-- Content (end) -->
         </div>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script> -->
         <script src="./assets/js/script.js"></script>
     </body>
 </html>
