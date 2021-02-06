@@ -136,73 +136,78 @@
             <!-- Content (start) -->
             <div class="main-container container-fluid">
                 <div class="page-title mx-2 my-3">
-                    <h3>Progress</h3>
-                    <p class="text-muted">Documentation and examples for using Bootstrap custom progress bars featuring support for stacked bars, animated backgrounds, and text labels.</p>
+                    <h3>Input</h3>
+                    <p class="text-muted">Easily extend form controls by adding text, buttons, or button groups on either side of textual inputs, custom selects, and custom file inputs.</p>
                 </div>
-                <div class="col-12">
-                    <div class="card rounded border-0 shadow mx-1 my-4 p-3">
-                        <h5 class="mx-1">Basic Progress</h5>
-                        <div class="progress my-2">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="row">
+                    <div class="col-lg-6 col-12">
+                        <div class="card rounded border-0 shadow mx-1 my-4 p-3">
+                            <div class="mx-1">
+                                <h5>Basic Input Form</h5>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Name</label>
+                                <input type="name" class="form-control" placeholder="Wahyu Amirulloh">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Email Address</label>
+                                <input type="name" class="form-control" placeholder="address@email.com">
+                            </div>
                         </div>
-                        <div class="progress my-2">
-                            <div class="progress-bar color-danger-spatu" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                        <div class="progress my-2">
-                            <div class="progress-bar color-warning-spatu" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                        <div class="progress my-2">
-                            <div class="progress-bar color-info-spatu" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                        <div class="progress my-2">
-                            <div class="progress-bar color-success-spatu" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="card rounded border-0 shadow mx-1 my-4 p-3">
+                            <div class="mx-1">
+                                <h5>Basic Sizing Form</h5>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Form Control Large</label>
+                                <input type="name" class="form-control-lg form-control" placeholder=".form-control-lg">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Form Control Small</label>
+                                <input type="name" class="form-control-sm form-control" placeholder=".form-control-sm">
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-12">
-                    <div class="card rounded border-0 shadow mx-1 my-4 p-3">
-                        <h5 class="mx-1">Label Progress</h5>
-                        <div class="progress my-2">
-                            <div class="progress-bar color-danger-spatu" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">Failed 10%</div>
+                    <div class="col-lg-6 col-12">
+                        <div class="card rounded border-0 shadow mx-1 my-4 p-3">
+                            <div class="mx-1">
+                                <h5>File Upload</h5>
+                            </div>
+                            <div>
+                                <input class="form-control" type="file" id="formFile">
+                              </div>
                         </div>
-                        <div class="progress my-2">
-                            <div class="progress-bar color-primary-spatu" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">Loading... 50%</div>
+                        <div class="card rounded border-0 shadow mx-1 my-4 p-3">
+                            <div>
+                                <label for="exampleColorInput" class="form-label">Color picker</label>
+                                <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c" title="Choose your color">
+                            </div>
                         </div>
-                        <div class="progress my-2">
-                            <div class="progress-bar color-success-spatu" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Success 100%</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="card rounded border-0 shadow mx-1 my-4 p-3">
-                        <h5 class="mx-1">Multiple Bar Progress</h5>
-                        <div class="progress">
-                            <div class="progress-bar color-primary-spatu" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">Uploading</div>
-                            <div class="progress-bar color-warning-spatu" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">Downloading</div>
-                            <div class="progress-bar color-success-spatu" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">Installing</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="card rounded border-0 shadow mx-1 my-4 p-3">
-                        <h5 class="mx-1">Stripped Bar Progress</h5>
-                        <div class="progress my-2">
-                            <div class="progress-bar progress-bar-striped color-danger-spatu" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                        <div class="progress my-2">
-                            <div class="progress-bar progress-bar-striped color-warning-spatu" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                        <div class="progress my-2">
-                            <div class="progress-bar progress-bar-striped color-info-spatu" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                        <div class="progress my-2">
-                            <div class="progress-bar progress-bar-striped color-success-spatu" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="card rounded border-0 shadow mx-1 my-4 p-3">
+                            <div class="mx-1">
+                                <h5>Datalist</h5>
+                            </div>
+                            <div>
+                                <label for="exampleDataList" class="form-label mx-1">Kota di Indonesia</label>
+                                <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type city name to search...">
+                                <datalist id="datalistOptions">
+                                    <option value="Jakarta">
+                                    <option value="Surabaya">
+                                    <option value="Medan">
+                                    <option value="Bandung">
+                                    <option value="Makassar">
+                                    <option value="Palembang">
+                                    <option value="Batam">
+                                    <option value="Makassar">
+                                </datalist>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- Content (end) -->
         </div>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script> -->
         <script src="./assets/js/script.js"></script>
     </body>
 </html>
