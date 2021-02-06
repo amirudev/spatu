@@ -141,34 +141,83 @@
                 </div>
                 <section class="main-data">
                     <div class="row g-3 graph-top">
-                        <div class="col-lg-3 p-2">
-                            <div class="card card-canvas mx-1 p-2 shadow-sm">
-                                <span class="fs-5 text-white">Revenue</span>
-                                <canvas id="canvas-revenue">
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="card card-canvas mx-1 p-2 shadow-sm row color-info-spatu">
+                                <div class="fs-5 my-1">
+                                    <i class="fas fa-users mx-1"></i>
+                                    <span>New Users</span>
+                                    <div class="my-3">
+                                        <div class="progress my-2">
+                                            <div class="progress-bar progress-lg color-primary-spatu" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">Man</div>
+                                        </div>
+                                        <div class="progress my-2">
+                                            <div class="progress-bar color-danger-spatu" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">Woman</div>
+                                        </div>
+                                        <h6>1000 New Users</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="card card-canvas mx-1 p-2 shadow-sm row color-info-spatu">
+                                <div class="fs-5 my-1">
+                                    <i class="fas fa-edit mx-1"></i>
+                                    <span>New Projects</span>
+                                    <div class="my-3">
+                                        <div class="progress my-2">
+                                            <div class="progress-bar color-danger-spatu" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <h5>40 New Projects</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-3">
+                            <div class="card card-canvas mx-1 p-2 shadow-sm row color-info-spatu">
+                                <div class="fs-5 my-1">
+                                    <i class="fas fa-edit mx-1"></i>
+                                    <span>New Invoices</span>
+                                    <div class="my-3">
+                                        <div class="progress my-2">
+                                            <div class="progress-bar color-success-spatu" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <h5>84 Invoices</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-3">
+                            <div class="card card-canvas mx-1 p-2 shadow-sm row color-info-spatu">
+                                <div class="fs-5 my-1">
+                                    <i class="fas fa-edit mx-1"></i>
+                                    <span>Total Orders</span>
+                                    <div class="my-3">
+                                        <div class="progress my-2">
+                                            <div class="progress-bar color-primary-spatu" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <h5>254 Orders</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 p-2 ">
+                            <div class="card card-canvas mx-1 p-2 shadow-sm row color-info-spatu">
+                                <div class="col-3 text-center my-3">
+                                    <h5>Balance</h5>
+                                    <i class="fas fa-file-invoice-dollar fs-1 my-2"></i>
+                                </div>
+                                <canvas id="canvas-revenue" class="graph-data col-md-9">
                                     
                                 </canvas>
                             </div>
                         </div>
-                        <div class="col-lg-3 p-2">
-                            <div class="card card-canvas mx-1 p-2 shadow-sm">
-                                <span class="fs-5 text-white">Net Income</span>
-                                <canvas id="canvas-netincome">
-                                    
-                                </canvas>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 p-2">
-                            <div class="card card-canvas mx-1 p-2 shadow-sm">
-                                <span class="fs-5 text-white">Finance</span>
-                                <canvas id="canvas-finance">
-                                    
-                                </canvas>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 p-2">
-                            <div class="card card-canvas mx-1 p-2 shadow-sm">
-                                <span class="fs-5 text-white">Visitor</span>
-                                <canvas id="canvas-visitor">
+                        <div class="col-md-6 p-2">
+                            <div class="card card-canvas mx-1 p-2 shadow-sm row color-info-spatu">
+                                <div class="col-3 text-center text-white my-3">
+                                    <h5>Expense</h5>
+                                    <i class="fas fa-funnel-dollar fs-1 my-2"></i>
+                                </div>
+                                <canvas id="canvas-netincome" class="col-9">
                                     
                                 </canvas>
                             </div>
@@ -177,7 +226,7 @@
                     <div class="row graph">
                         <div class="col-lg-8 col-12">
                             <div class="col-12">
-                                <div class="card card-canvas p-4 bg-white my-4">
+                                <div class="card card-canvas p-4 bg-white my-2">
                                     <span class="fs-5">Transactions</span>
                                     <div class="row">
                                         <div class="text-data col-12 col-lg-4">
@@ -314,7 +363,7 @@
             </div>
             <!-- Content (end) -->
         </div>
-        <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script> -->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
         <script src="./assets/js/script.js"></script>
     </body>
 </html>
