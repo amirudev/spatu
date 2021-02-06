@@ -298,13 +298,13 @@ a {
 }
 
 .color-dark-spatu {
-    background-color: rgba(34, 34, 34, 0.7);
-    color: #eeeeee;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
 }
 
 .color-dark-spatu:hover {
     background-color: rgba(34, 34, 34, 1);
-    color: #ffffff;
+    color: white;
 }
 
 .color-dark-spatu:focus {

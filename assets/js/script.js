@@ -41,6 +41,19 @@ Array.prototype.forEach.call(els_nav, (el) => {
     });
 });
 
+// Component Modal
+var els_nav = document.getElementsByClassName('modal-button');
+Array.prototype.forEach.call(els_nav, (el) => {
+    el.addEventListener('click', () => {
+        el.nextSibling.nextSibling.style.display = 'inline-block';
+        var els_nav = document.getElementsByClassName('close-button');
+        Array.prototype.forEach.call(els_nav, (el) => {
+            el.addEventListener('click', () => {
+                el.parentNode.parentNode.parentNode.parentNode.style.display = 'none';
+            });
+        });
+    });
+});
 
 // Chart
 var ctx_revenue = document.getElementById('canvas-revenue');
