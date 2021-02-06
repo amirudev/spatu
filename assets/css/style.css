@@ -179,6 +179,11 @@ a {
     object-fit: cover;
 }
 
+/* Component Navs */
+.nav .nav-link {
+    font-size: 15px;
+}
+
 /* Responsive */
 
 @media only screen and (max-width: 790px) {
