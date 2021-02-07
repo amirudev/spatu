@@ -13,6 +13,8 @@
         <link rel="stylesheet" href="./assets/css/style.css">
         <!-- Font Awesome -->
         <script src="https://kit.fontawesome.com/3bea811d2b.js" crossorigin="anonymous"></script>
+        <!-- Chart JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
     </head>
     <body>
         <!-- Sidebar (start) -->
@@ -137,71 +139,132 @@
             <!-- Content (start) -->
             <div class="main-container container-fluid">
                 <div class="page-title mx-2 my-3">
-                    <h3>Input</h3>
-                    <p class="text-muted">Easily extend form controls by adding text, buttons, or button groups on either side of textual inputs, custom selects, and custom file inputs.</p>
+                    <h3>Charts</h3>
+                    <p class="text-muted">Charts Miscellaneous ( Line, Bar, Radar, Doughnut, Pie, Polar Area )</p>
                 </div>
                 <div class="row">
                     <div class="col-lg-6 col-12">
                         <div class="card rounded border-0 shadow mx-1 my-4 p-3">
-                            <div class="mx-1">
-                                <h5>Basic Input Form</h5>
+                            <h5>Line Chart</h5>
+                            <div class="my-2">
+                                <canvas id="linechart"></canvas>
                             </div>
-                            <div class="mb-3">
-                                <label class="form-label">Name</label>
-                                <input type="text" class="form-control" placeholder="Wahyu Amirulloh">
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label">Email Address</label>
-                                <input type="text" class="form-control" placeholder="address@email.com">
-                            </div>
+                            <script>
+                                var linechart = document.getElementById('linechart');
+                                var newLineChart = new Chart(linechart, {
+                                    type: 'line',
+                                    data: {
+                                        labels: ['Data 1', 'Data 2', 'Data 3', 'Data 4', 'Data 5'],
+                                        datasets: [{
+                                            label: '# of Data',
+                                            data: [12, 15, 13, 14, 17],
+                                            backgroundColor: ['rgb(2, 117, 216)'],
+                                        }]
+                                    }
+                                });
+                            </script>
                         </div>
                         <div class="card rounded border-0 shadow mx-1 my-4 p-3">
-                            <div class="mx-1">
-                                <h5>Basic Sizing Form</h5>
+                            <h5>Bar Chart</h5>
+                            <div class="my-2">
+                                <canvas id="barchart"></canvas>
                             </div>
-                            <div class="mb-3">
-                                <label class="form-label">Form Control Large</label>
-                                <input type="text" class="form-control-lg form-control" placeholder=".form-control-lg">
+                            <script>
+                                var barchart = document.getElementById('barchart');
+                                var newbarchart = new Chart(barchart, {
+                                    type: 'bar',
+                                    data: {
+                                        labels: ['Data 1', 'Data 2', 'Data 3', 'Data 4', 'Data 5'],
+                                        datasets: [{
+                                            label: '# of Data',
+                                            data: [12, 15, 13, 14, 17],
+                                            backgroundColor: [
+                                                'rgb(2, 117, 216)',
+                                                'rgb(92, 184, 92)',
+                                                'rgb(91, 192, 222)',
+                                                'rgb(240, 173, 78)',
+                                                'rgb(217, 83, 79)',
+                                            ],
+                                        }]
+                                    }
+                                });
+                            </script>
+                        </div>
+                        <div class="card rounded border-0 shadow mx-1 my-4 p-3">
+                            <h5>Doughnut Chart</h5>
+                            <div class="my-2">
+                                <canvas id="doughnut"></canvas>
                             </div>
-                            <div class="mb-3">
-                                <label class="form-label">Form Control Small</label>
-                                <input type="text" class="form-control-sm form-control" placeholder=".form-control-sm">
-                            </div>
+                            <script>
+                                var doughnut = document.getElementById('doughnut');
+                                var newdoughnut = new Chart(doughnut, {
+                                    type: 'doughnut',
+                                    data: {
+                                        labels: ['Data 1', 'Data 2', 'Data 3', 'Data 4', 'Data 5'],
+                                        datasets: [{
+                                            label: '# of Data',
+                                            data: [12, 15, 13, 14, 17],
+                                            backgroundColor: [
+                                                'rgb(2, 117, 216)',
+                                                'rgb(92, 184, 92)',
+                                                'rgb(91, 192, 222)',
+                                                'rgb(240, 173, 78)',
+                                                'rgb(217, 83, 79)',
+                                            ],
+                                        }]
+                                    }
+                                });
+                            </script>
                         </div>
                     </div>
                     <div class="col-lg-6 col-12">
                         <div class="card rounded border-0 shadow mx-1 my-4 p-3">
-                            <div class="mx-1">
-                                <h5>File Upload</h5>
+                            <h5>Radar Chart</h5>
+                            <div class="my-2">
+                                <canvas id="radar"></canvas>
                             </div>
-                            <div>
-                                <input class="form-control" type="file" id="formFile">
-                              </div>
+                            <script>
+                                var radar = document.getElementById('radar');
+                                var newradar = new Chart(radar, {
+                                    type: 'radar',
+                                    data: {
+                                        labels: ['Data 1', 'Data 2', 'Data 3', 'Data 4', 'Data 5'],
+                                        datasets: [{
+                                            label: '# of Data',
+                                            data: [12, 15, 13, 14, 17],
+                                            backgroundColor: [
+                                                'rgb(2, 117, 216)'
+                                            ]
+                                        }]
+                                    }
+                                });
+                            </script>
                         </div>
                         <div class="card rounded border-0 shadow mx-1 my-4 p-3">
-                            <div>
-                                <label for="exampleColorInput" class="form-label">Color picker</label>
-                                <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c" title="Choose your color">
+                            <h5>Polar Area Chart</h5>
+                            <div class="my-2">
+                                <canvas id="polararea"></canvas>
                             </div>
-                        </div>
-                        <div class="card rounded border-0 shadow mx-1 my-4 p-3">
-                            <div class="mx-1">
-                                <h5>Datalist</h5>
-                            </div>
-                            <div>
-                                <label for="exampleDataList" class="form-label mx-1">Kota di Indonesia</label>
-                                <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type city name to search...">
-                                <datalist id="datalistOptions">
-                                    <option value="Jakarta">
-                                    <option value="Surabaya">
-                                    <option value="Medan">
-                                    <option value="Bandung">
-                                    <option value="Makassar">
-                                    <option value="Palembang">
-                                    <option value="Batam">
-                                    <option value="Makassar">
-                                </datalist>
-                            </div>
+                            <script>
+                                var polararea = document.getElementById('polararea');
+                                var newpolararea = new Chart(polararea, {
+                                    type: 'polarArea',
+                                    data: {
+                                        labels: ['Data 1', 'Data 2', 'Data 3', 'Data 4', 'Data 5'],
+                                        datasets: [{
+                                            label: '# of Data',
+                                            data: [12, 15, 13, 14, 17],
+                                            backgroundColor: [
+                                                'rgb(2, 117, 216)',
+                                                'rgb(92, 184, 92)',
+                                                'rgb(91, 192, 222)',
+                                                'rgb(240, 173, 78)',
+                                                'rgb(217, 83, 79)',
+                                            ],
+                                        }]
+                                    }
+                                });
+                            </script>
                         </div>
                     </div>
                 </div>
