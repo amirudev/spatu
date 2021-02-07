@@ -192,6 +192,11 @@ a {
     border-radius: 50%;
 }
 
+/* Error */
+.error-text {
+    font-size: 200px;
+}
+
 /* Responsive */
 
 @media only screen and (max-width: 790px) {
