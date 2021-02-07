@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Free Bootstrap Admin Template">
+        <meta name="keywords" content="html, css, js, bootstrap, admin, template, dashboard">
+        <meta name="author" content="Wahyu Amirulloh">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>Dashboard - Spatu</title>
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <!-- Local CSS -->
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/3bea811d2b.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!-- Sidebar (start) -->
+        <div class="sidebar-wrapper float-left bg-white sidebar-open" id="sidebar-window">
+            <div class="sidebar-header">
+                <div class="sidebar-header_title text-center my-3 fs-3 text-secondary">
+                    <span>Spatu!</span>
+                    <button class="close-sidebar-button" id="sidebar-window-close"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+            <div class="sidebar-menu my-4">
+                <div class="nav-list my-3">
+                    <p class="nav-title text-secondary mx-3 my-1">Navigation</p>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="./index.html"><i class="fas fa-home mx-3"></i>Dashboard</a>
+                        </li>
+                    </ul>
+                    <p class="nav-title text-secondary mx-3 my-1">UI Element</p>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link dropdown nav-dropdown"href="#"><i class="fas fa-play mx-3"></i>Components</a>
+                            <ul class="nav flex-column ms-5 submenu submenu-hidden" id="submenu-dropdown">
+                                <a href="./component-alert.html"><li class="nav-item p-2 ps-4">Alert</li></a>
+                                <a href="./component-badge.html"><li class="nav-item p-2 ps-4">Badge</li></a>
+                                <a href="./component-button.html"><li class="nav-item p-2 ps-4">Buttons</li></a>
+                                <a href="./component-card.html"><li class="nav-item p-2 ps-4">Card</li></a>
+                                <a href="./component-dropdown.html"><li class="nav-item p-2 ps-4">Dropdown</li></a>
+                                <a href="./component-listgroup.html"><li class="nav-item p-2 ps-4">List group</li></a>
+                                <a href="./component-modal.html"><li class="nav-item p-2 ps-4">Modal</li></a>
+                                <a href="./component-navs.html"><li class="nav-item p-2 ps-4">Navs</li></a>
+                                <a href="./component-pagination.html"><li class="nav-item p-2 ps-4">Pagination</li></a>
+                                <a href="./component-progress.html"><li class="nav-item p-2 ps-4">Progress</li></a>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-list my-3">
+                    <p class="nav-title text-secondary mx-3 my-1">Forms and Tables</p>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link dropdown nav-dropdown" href="#"><i class="far fa-file-alt mx-3"></i>Form Elements</a>
+                            <ul class="nav flex-column ms-5 submenu submenu-hidden" id="submenu-dropdown">
+                                <a href="./formelement-input.html"><li class="nav-item p-2 ps-4">Input</li></a>
+                                <a href="./formelement-inputgroup.html"><li class="nav-item p-2 ps-4">Input group</li></a>
+                                <a href="./formelement-select.html"><li class="nav-item p-2 ps-4">Select</li></a>
+                                <a href="./formelement-radio.html"><li class="nav-item p-2 ps-4">Radio and Checkbox</li></a>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./formeditor.html"><i class="far fa-edit mx-3"></i>Form Editor</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./table.html"><i class="fas fa-grip-horizontal mx-3"></i>Table</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="./formlayout.html"><i class="far fa-file mx-3"></i>Form Template</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-list my-3">
+                    <p class="nav-title text-secondary mx-3 my-1">Template</p>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link dropdown nav-dropdown" aria-current="page" href="#"><i class="far fa-clone mx-3"></i>Template</a>
+                            <ul class="nav flex-column ms-5 submenu submenu-hidden">
+                                <a href="./template-chatbox.html"><li class="nav-item p-2 ps-4">Chatbox</li></a>
+                                <a href="./template-pricing.html"><li class="nav-item p-2 ps-4">Pricing</li></a>
+                                <a href="./template-todolist.html"><li class="nav-item p-2 ps-4">To-Do List</li></a>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="./charts.html"><i class="fas fa-chart-line mx-3"></i>Charts</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-list my-3">
+                    <p class="nav-title text-secondary mx-3 my-1">Pages</p>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link dropdown nav-dropdown" aria-current="page" href="#"><i class="far fa-clone mx-3"></i>Authentication</a>
+                            <ul class="nav flex-column ms-5 submenu submenu-hidden">
+                                <a href="./authentication-login.html"><li class="nav-item p-2 ps-4">Login</li></a>
+                                <a href="./authentication-register.html"><li class="nav-item p-2 ps-4">Register</li></a>
+                                <a href="./authentication-forgotpassword.html"><li class="nav-item p-2 ps-4">Forgot Password</li></a>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link dropdown nav-dropdown" href="#"><i class="fas fa-chart-line mx-3"></i>Error</a>
+                            <ul class="nav flex-column ms-5 submenu submenu-hidden">
+                                <a href="./error-403.html"><li class="nav-item p-2 ps-4">403</li></a>
+                                <a href="./error-404.html"><li class="nav-item p-2 ps-4">404</li></a>
+                                <a href="./error-500.html"><li class="nav-item p-2 ps-4">500</li></a>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Sidebar (end) -->
+        <div class="main bg-light float-right" id="main-content">
+            <!-- Topbar (start) -->
+            <nav class="navbar navbar-expand navbar-light bg-light">
+                <div class="container-fluid">
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav d-flex justify-content-between container-fluid">
+                            <li class="nav-item my-1">
+                                <a class="nav-link" href="#" id="sidebar-window-button"><i class="fas fa-bars"></i></a>
+                            </li>
+                            <li class="nav-item nav-item-right d-flex">
+                                <a class="nav-link mx-2 my-1" href="#"><i class="far fa-bell"></i></a>
+                                <a class="nav-link mx-2 my-1" href="#"><i class="far fa-envelope"></i></a>
+                                <a class="nav-link" href="#">
+                                    <img src="./assets/image/128x128.png" id="avatar-image" class="mx-2"><span id="avatar-text" class="text-secondary">Hi, Wahyu A</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Topbar (end) -->
+            <!-- Content (start) -->
+            <div class="main-content container-fluid">
+                <div class="page-title mx-2 my-3">
+                    <h3>Template Forms</h3>
+                    <p class="text-muted">Example form usage for Job Apllication Form</p>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card rounded border-0 shadow mx-1 my-4 p-3">
+                            <div class="my-2">
+                                <div class="input-group">
+                                    <label class="my-1">Registration ID</label>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" id="basic-addon1">ID</span>
+                                        <input type="number" class="form-control" placeholder="Registration ID" aria-label="Registration ID" aria-describedby="basic-addon1">
+                                    </div>
+                                </div>
+                                <div class="input-group">
+                                    <label class="my-1">Name</label>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" id="basic-addon1">Name</span>
+                                        <input type="text" class="form-control" placeholder="Full Name" aria-label="Name" aria-describedby="basic-addon1">
+                                    </div>
+                                </div>
+                                <div class="input-group">
+                                    <label class="my-1">Place of Birth</label>
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" placeholder="Tempat Lahir" aria-label="Tempat Lahir" aria-describedby="basic-addon1">
+                                        <input type="date" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="input-group">
+                                    <label class="my-1">City Residence</label>
+                                    <div class="input-group mb-3">
+                                        <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type city name to search...">
+                                        <datalist id="datalistOptions">
+                                            <option value="Jakarta">
+                                            <option value="Surabaya">
+                                            <option value="Medan">
+                                            <option value="Bandung">
+                                            <option value="Makassar">
+                                            <option value="Palembang">
+                                            <option value="Batam">
+                                            <option value="Makassar">
+                                        </datalist>
+                                    </div>
+                                </div>
+                                <div class="input-group">
+                                    <label class="my-1">Interested Job</label>
+                                    <div class="input-group mb-3">
+                                        <select class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+                                            <option selected>Programmer</option>
+                                            <option value="1">Software Developer</option>
+                                            <option value="2">Database Administrator</option>
+                                            <option value="3">Hardware Engineer</option>
+                                            <option value="4">System Analyst</option>
+                                            <option value="5">Network Architect</option>
+                                            <option value="6">Web Developer</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="input-group">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group">
+                                            <label for="customRange2" class="form-label">Job Experience</label>
+                                            <div class="btn-group my-2 w-100">
+                                                <span class="mx-3">Less than 1 Year</span>
+                                                <input type="range" class="form-range" min="0" max="5" id="customRange2">
+                                                <span class="mx-3">More than 5 Year</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <label class="my-1">Tell yourself briefly</label>
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                    <label for="floatingInput">I'm a ...</label>
+                                </div>
+                                <div class="input-group">
+                                    <label class="my-1">Profile Photo</label>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group">
+                                            <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                                            <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04"><i class="fas fa-paper-plane"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="input-group">
+                                    <label class="my-1">Terms and Condition</label>
+                                        <div class="input-group mb-3">
+                                            <input type="checkbox" class="form-check-input"><span class="mx-1">I have read Terms and Condition and Agree it</span>
+                                        </div>
+                                </div>
+                                <button class="btn color-primary-spatu w-100"><i class="fas fa-paper-plane me-2"></i>Apply My Profile</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <!-- Content (end) -->
+        </div>
+        <script src="./assets/js/script.js"></script>
+    </body>
+</html>
