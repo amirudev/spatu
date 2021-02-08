@@ -189,7 +189,7 @@ a {
 }
 
 /* Template Chatbox */
-.card img {
+.card .chatbox-profile-img {
     width: 55px;
     height: 55px;
     object-fit: cover;
