@@ -284,10 +284,10 @@ var chart_portfolios = new Chart(ctx_portfolios, {
         datasets: [
             {
                 backgroundColor: [
-                    'rgba(2, 117, 216, 0.7)',
-                    'rgba(92, 184, 92, 0.7)',
-                    'rgba(91, 192, 222, 0.7)',
-                    'rgba(240, 173, 78, 0.7)',
+                    '#b5e4fe',
+                    '#2cb3ff',
+                    '#3b89ff',
+                    '#0d68f0',
                 ],
                 data: [30, 50, 20, 40],
             }
